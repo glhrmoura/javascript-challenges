@@ -16,13 +16,13 @@ test('it calculates the diff of shallow object properties', assert => {
     ['+', 'oranges', 4]
   ]
 
-  assert.deepEqual(diff(newCode, oldCode), objectDiff)
-  assert.equal(diff(newCode, oldCode).length, 2)
+  assert.deepEqual(diff(oldCode, newCode), objectDiff)
+  assert.equal(diff(oldCode, newCode).length, 2)
 
   assert.end()
 })
 
-test.skip('it calculates the diff of nested object properties', assert => {
+test('it calculates the diff of nested object properties', assert => {
   const newCode = {
     apples: 3,
     oranges: {
@@ -42,13 +42,13 @@ test.skip('it calculates the diff of nested object properties', assert => {
     ['+', 'oranges.navel', 5]
   ]
 
-  assert.deepEqual(diff(newCode, oldCode), objectDiff)
-  assert.equal(diff(newCode, oldCode).length, 2)
+  assert.deepEqual(diff(oldCode, newCode), objectDiff)
+  assert.equal(diff(oldCode, newCode).length, 2)
 
   assert.end()
 })
 
-test.skip('it calculates the diff of doubly nested object properties', assert => {
+test('it calculates the diff of doubly nested object properties', assert => {
   const newCode = {
     apples: 3,
     oranges: {
@@ -78,13 +78,13 @@ test.skip('it calculates the diff of doubly nested object properties', assert =>
     [ '+', 'oranges.navel.apples', 3 ]
   ]
 
-  assert.deepEqual(diff(newCode, oldCode), objectDiff)
-  assert.equal(diff(newCode, oldCode).length, 4)
+  assert.deepEqual(diff(oldCode, newCode), objectDiff)
+  assert.equal(diff(oldCode, newCode).length, 4)
 
   assert.end()
 })
 
-test.skip('it calculates the diff of diference sized objects', assert => {
+test('it calculates the diff of diference sized objects', assert => {
   const newCode = {
     apples: 3,
     oranges: 5
@@ -108,8 +108,8 @@ test.skip('it calculates the diff of diference sized objects', assert => {
     ['+', 'oranges', 5]
   ]
 
-  assert.deepEqual(diff(newCode, oldCode), objectDiff)
-  assert.equal(diff(newCode, oldCode).length, 4)
+  assert.deepEqual(diff(oldCode, newCode), objectDiff)
+  assert.equal(diff(oldCode, newCode).length, 4)
 
   assert.end()
 })
