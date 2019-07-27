@@ -1,16 +1,20 @@
+const isObject = obj => {
+  return obj.__proto__ === Object.prototype;
+};
+
 const flat = (obj, path = '', f = {}) => {
-	let flatten = {...f};
+  let flatten = { ...f };
 
-	for (let key in obj) {
-		if (typeof obj[key] === 'object') {
-        const result = flat(obj[key], path ? `${path}.${key}` : key, flatten);
-        flatten = {...flatten, ...result}
-      } else {
-        flatten[path ? `${path}.${key}` : key] = obj[key];
-      }
+  for (let key in obj) {
+    if (isObject(obj[key])) {
+      const result = flat(obj[key], path ? `${path}.${key}` : key, flatten);
+      flatten = { ...flatten, ...result };
+    } else {
+      flatten[path ? `${path}.${key}` : key] = obj[key];
     }
+  }
 
-	return flatten;
+  return flatten;
 };
 
 const diff = (oldCode, newCode) => {
@@ -28,10 +32,10 @@ const diff = (oldCode, newCode) => {
   Object.keys(newCodeFlat).map(newKey => {
     if (!oldCodeFlat[newKey]) {
       diffAdd.push(['+', newKey, newCodeFlat[newKey]]);
-    };
+    }
   });
 
-  return [ ...diffRemove, ...diffAdd, ];
-}
+  return [...diffRemove, ...diffAdd];
+};
 
 module.exports = diff;
