@@ -6,7 +6,7 @@ test('should return a promise', t => {
   t.end()
 })
 
-test.skip('returned promise should resolve to array of resolved promises', async t => {
+test('returned promise should resolve to array of resolved promises', async t => {
   const p1 = Promise.resolve('first')
   const p2 = new Promise(resolve => setTimeout(resolve, 100, 'second'))
 
@@ -18,7 +18,7 @@ test.skip('returned promise should resolve to array of resolved promises', async
   t.end()
 })
 
-test.skip('returned promise should reject if any elements are rejected', async t => {
+test('returned promise should reject if any elements are rejected', async t => {
   const p1 = Promise.resolve('first')
   const failure = Promise.reject(new Error('BOOM!'))
 
@@ -31,7 +31,7 @@ test.skip('returned promise should reject if any elements are rejected', async t
   t.end()
 })
 
-test.skip('should preserve array argument order on fulfillment', async t => {
+test('should preserve array argument order on fulfillment', async t => {
   const p1 = new Promise(resolve => setTimeout(resolve, 300, 'first'))
   const p2 = new Promise(resolve => setTimeout(resolve, 800, 'second'))
   const p3 = new Promise(resolve => setTimeout(resolve, 100, 'third'))
@@ -44,7 +44,7 @@ test.skip('should preserve array argument order on fulfillment', async t => {
   t.end()
 })
 
-test.skip('should be immediately resolved if iterable is empty', async t => {
+test('should be immediately resolved if iterable is empty', async t => {
   const expected = []
   const actual = await all([])
 
@@ -53,7 +53,7 @@ test.skip('should be immediately resolved if iterable is empty', async t => {
   t.end()
 })
 
-test.skip('should work with non-promise values in array argument', async t => {
+test('should work with non-promise values in array argument', async t => {
   const p1 = new Promise(resolve => setTimeout(resolve, 100, 'foo'))
   const p2 = 1337
 
