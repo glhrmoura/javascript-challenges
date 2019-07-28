@@ -5,7 +5,6 @@ const parensAreBalanced = input => {
   const parens = [...input].filter(char => /[\(\)\[\]\{\}]/.test(char));
 
   for (let i = 0; i < parens.length; i++) {
-    
     if (/\)\]\}]/.test(parens[i]) && !opens.length) {
       return false;
     }
@@ -23,4 +22,4 @@ const parensAreBalanced = input => {
   return !opens.length;
 }
 
-module.exports = parensAreBalanced
+module.exports = parensAreBalanced;
