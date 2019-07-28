@@ -8,13 +8,12 @@ const addEventing = target => {
         if (!listeners[name]) {
           listeners[name] = [];
         }
-
         listeners[name].push(callback);
       }
     },
     trigger(name, ...args) {
       if (listeners[name]) {
-        listeners[name].map(cb => cb(...args));
+        listeners[name].forEach(cb => cb(...args));
       };
     },
   };
