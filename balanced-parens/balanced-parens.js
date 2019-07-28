@@ -1,5 +1,4 @@
 const parensAreBalanced = input => {
-  let open = '';
   const opens = [];
   const map = { '(': ')', '[': ']', '{': '}', };
   const parens = [...input].filter(char => /[\(\)\[\]\{\}]/.test(char));
@@ -10,10 +9,9 @@ const parensAreBalanced = input => {
     }
 
     if (/[\(\[\{]/.test(parens[i])) {
-      open = parens[i];
       opens.unshift(parens[i]);
     } else if (parens[i] === map[opens[0]]) {
-      open = opens.shift();
+      opens.shift();
     } else {
       return false;
     }
