@@ -46,7 +46,7 @@ experience of the challenge for other developers who find this repository.
 ### Advanced
 
 * [Object diffing](/object-diff/)
-* [Recreate setInterval](/setinterval/)
+* [Recreate setInterval](/recreate-setinterval/)
 * [Recreate Promise.all](/promise-dot-all/)
 
 ## Relevant Reading
