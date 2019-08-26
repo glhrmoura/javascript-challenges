@@ -1,10 +1,9 @@
 const checkSum = (arr, crrValue, targetValue, crrDeep, targetDeep) => {
-  crrDeep++;
   let exists = false;
 
   for (let i = 0; i < arr.length; i++) {
-    if (crrDeep < targetDeep) {
-      exists = checkSum(arr, arr[i] + crrValue, targetValue, crrDeep, targetDeep);
+    if (crrDeep + 1 < targetDeep) {
+      exists = checkSum(arr, arr[i] + crrValue, targetValue, crrDeep + 1, targetDeep);
       if (exists) break;
     } else if (arr[i] + crrValue === targetValue) {
       exists = true;
