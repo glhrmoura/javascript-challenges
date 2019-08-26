@@ -42,10 +42,10 @@ experience of the challenge for other developers who find this repository.
 * [Target sum exists](/target-sum-exists/)
 * [Balanced Parentheses](/balanced-parens/)
 * [Add eventing](/add-eventing/)
+* [Object Flat](/object-flat/)
 
 ### Advanced
 
-* [Object Flat](/object-flat/)
 * [Object diffing](/object-diff/)
 * [Recreate setInterval](/recreate-setinterval/)
 * [Recreate Promise.all](/promise-dot-all/)
