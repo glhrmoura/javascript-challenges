@@ -45,6 +45,7 @@ experience of the challenge for other developers who find this repository.
 
 ### Advanced
 
+* [Object Flat](/object-flat/)
 * [Object diffing](/object-diff/)
 * [Recreate setInterval](/recreate-setinterval/)
 * [Recreate Promise.all](/promise-dot-all/)
