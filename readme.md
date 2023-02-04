@@ -1,4 +1,4 @@
-# :trophy: JavaScript Challenges
+# JavaScript Challenges
 
 A collection of JavaScript coding challenges.
 
