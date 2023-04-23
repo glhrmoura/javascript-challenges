@@ -1,26 +1,34 @@
+<p align="center">
+  <img
+    style="object: contain; height: 150px"
+    src="https://raw.githubusercontent.com/glhrmoura/js-challenges/master/src/images/logo.png"
+  />
+</p>
+
 # JavaScript Challenges
 
 A collection of JavaScript coding challenges.
 
-## Getting Started
+### Getting Started
 
 The only dependencies in this repo are for running the tests, which are written
 in Tape and Sinon.
 
-Install the dependencies
+### Setup
+
+#### Install
 
 ```
-npm i
+yarn install
 ```
 
-Then, in each challenge folder, you can run the following to see the tests for
-that challenge.
+#### Run tests
 
 ```
-node <challenge>-test.js
+yarn test
 ```
 
-## Solving Challenges
+### Solving Challenges
 
 This repo is only a set of challenges, it does not include the answers to any of
 the challenges.
@@ -29,29 +37,29 @@ If you implement a solution of your own, please **do not** post it publicly on
 this repository. Opening an issue or a pull request with a solution spoils the
 experience of the challenge for other developers who find this repository.
 
-## Challenges
+### Challenges
 
-### Beginner
+#### Beginner
 
-* [Babylonian square root method](/babylonian-method/)
-* [Number frequency](/number-frequency/)
+* [Babylonian square root method](/src/core/babylonian-method/)
+* [Number frequency](/src/core/number-frequency/)
 
-### Intermediate
+#### Intermediate
 
-* [Stack machine calculator](/stack-machine-calculator/)
-* [Target sum exists](/target-sum-exists/)
-* [Balanced Parentheses](/balanced-parens/)
-* [Add eventing](/add-eventing/)
-* [Object Flat](/object-flat/)
+* [Stack machine calculator](/src/core/stack-machine-calculator/)
+* [Target sum exists](/src/core/target-sum-exists/)
+* [Balanced Parentheses](/src/core/balanced-parens/)
+* [Add eventing](/src/core/add-eventing/)
+* [Object Flat](/src/core/object-flat/)
 
-### Advanced
+#### Advanced
 
-* [Object diffing](/object-diff/)
-* [Recreate setInterval](/recreate-setinterval/)
-* [Recreate Promise.all](/promise-dot-all/)
+* [Object diffing](/src/core/object-diff/)
+* [Recreate setInterval](/src/core/recreate-setinterval/)
+* [Recreate Promise.all](/src/core/promise-dot-all/)
 
-## Relevant Reading
+### License
 
-* [10 Interview Questions Every JavaScript Developer Should Know][js interview questions article]
+[MIT](https://github.com/glhrmoura/js-challenges/blob/master/LICENSE)
 
-[js interview questions article]: https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95
+Copyright (c) Guilherme Moura
