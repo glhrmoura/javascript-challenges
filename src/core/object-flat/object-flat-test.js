@@ -1,7 +1,8 @@
 const test = require('tape')
+
 const flat = require('./object-flat')
 
-test('take a nested object and leave all properties with only one level', assert => {
+test('Take a nested object and leave all properties with only one level', assert => {
   const person = {
     phones: {
       job: '1111-1111',
@@ -18,7 +19,7 @@ test('take a nested object and leave all properties with only one level', assert
   assert.end()
 })
 
-test('take a nested object with multiple levels and leave all properties at one level', assert => {
+test('Take a nested object with multiple levels and leave all properties at one level', assert => {
   const person = {
     phones: {
       job: '1111-1111',

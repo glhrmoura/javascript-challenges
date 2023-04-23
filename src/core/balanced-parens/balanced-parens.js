@@ -1,4 +1,4 @@
-const parensAreBalanced = input => {
+const balancedParens = input => {
   const opens = [];
   const chars = [...input];
   const map = {
@@ -28,4 +28,4 @@ const parensAreBalanced = input => {
   return !opens.length;
 }
 
-module.exports = parensAreBalanced;
+module.exports = balancedParens;

@@ -2,7 +2,7 @@ const test = require('tape')
 const sinon = require('sinon')
 const addEventing = require('./add-eventing')
 
-test('it should call the callback on the trigger event', assert => {
+test('It should call the callback on the trigger event', assert => {
   const obj = addEventing({ name: 'Kelsey', age: 30 })
   const ageChangeEvent = sinon.spy()
 
@@ -14,7 +14,7 @@ test('it should call the callback on the trigger event', assert => {
   assert.end()
 })
 
-test('it should be able to handle multiple callback functions for the same event name', assert => {
+test('It should be able to handle multiple callback functions for the same event name', assert => {
   const obj = addEventing({ name: 'Kelsey', age: 30 })
   const ageChangeEvent = sinon.spy()
   const otherChangeEvent = sinon.spy()
@@ -30,7 +30,7 @@ test('it should be able to handle multiple callback functions for the same event
   assert.end()
 })
 
-test('if it is called with an additional argument it should pass it to the listeners', assert => {
+test('If it is called with an additional argument it should pass it to the listeners', assert => {
   const obj = addEventing({ name: 'Kelsey', age: 30 })
   const ageChangeEvent = sinon.spy()
   const newAge = 31
@@ -44,7 +44,7 @@ test('if it is called with an additional argument it should pass it to the liste
   assert.end()
 })
 
-test('if it is called with an multiple arguments it should pass them to the listeners', assert => {
+test('If it is called with an multiple arguments it should pass them to the listeners', assert => {
   const obj = addEventing({ name: 'Kelsey', age: 30 })
   const ageChangeEvent = sinon.spy()
   const newName = 'Alice'
@@ -59,7 +59,7 @@ test('if it is called with an multiple arguments it should pass them to the list
   assert.end()
 })
 
-test('it should not trigger events that were not set to listen', assert => {
+test('It should not trigger events that were not set to listen', assert => {
   const obj = addEventing({ name: 'Kelsey', age: 30 })
   const notCalledEvent = sinon.spy()
 

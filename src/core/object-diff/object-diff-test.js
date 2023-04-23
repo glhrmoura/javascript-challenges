@@ -1,7 +1,8 @@
 const test = require('tape')
+
 const diff = require('./object-diff')
 
-test('it calculates the diff of shallow object properties', assert => {
+test('It calculates the diff of shallow object properties', assert => {
   const newCode = {
     apples: 3,
     oranges: 4
@@ -22,7 +23,7 @@ test('it calculates the diff of shallow object properties', assert => {
   assert.end()
 })
 
-test('it calculates the diff of nested object properties', assert => {
+test('It calculates the diff of nested object properties', assert => {
   const newCode = {
     apples: 3,
     oranges: {
@@ -48,7 +49,7 @@ test('it calculates the diff of nested object properties', assert => {
   assert.end()
 })
 
-test('it calculates the diff of doubly nested object properties', assert => {
+test('It calculates the diff of doubly nested object properties', assert => {
   const newCode = {
     apples: 3,
     oranges: {
@@ -84,7 +85,7 @@ test('it calculates the diff of doubly nested object properties', assert => {
   assert.end()
 })
 
-test('it calculates the diff of diference sized objects', assert => {
+test('It calculates the diff of diference sized objects', assert => {
   const newCode = {
     apples: 3,
     oranges: 5
