@@ -2,21 +2,12 @@
   "name": "javascript-challenges",
   "version": "1.0.0",
   "description": "A collection of JavaScript coding challenges.",
+  "author": "Guilherme Moura <mouraggui@gmail.com>",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape src/**/*.js | faucet"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/indiesquidge/challenges.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/indiesquidge/challenges/issues"
-  },
-  "homepage": "https://github.com/indiesquidge/challenges#readme",
   "devDependencies": {
+    "faucet": "^0.0.4",
     "sinon": "^6.1.4",
     "tape": "^4.9.1"
   }
