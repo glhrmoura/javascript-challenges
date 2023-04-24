@@ -22,7 +22,7 @@ in Tape and Sinon.
 yarn install
 ```
 
-#### Run tests
+#### Tests
 
 ```
 yarn test
