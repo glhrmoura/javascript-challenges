@@ -9,11 +9,6 @@
 
 A collection of JavaScript coding challenges.
 
-### Getting Started
-
-The only dependencies in this repo are for running the tests, which are written
-in Tape and Sinon.
-
 ### Setup
 
 #### Install
