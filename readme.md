@@ -9,20 +9,6 @@
 
 A collection of JavaScript coding challenges.
 
-### Setup
-
-#### Install
-
-```
-yarn install
-```
-
-#### Tests
-
-```
-yarn test
-```
-
 ### Solving Challenges
 
 This repo is only a set of challenges, it does not include the answers to any of
